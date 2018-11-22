@@ -977,7 +977,7 @@ BOOST_AUTO_TEST_CASE(private_state_variable)
 
 BOOST_AUTO_TEST_CASE(base_class_state_variable_accessor)
 {
-	// test for issue #1126 https://github.com/ethereum/cpp-ethereum/issues/1126
+	// test for issue #1126 https://github.com/wuyazero/cpp-wuyazero/issues/1126
 	char const* text = R"(
 		contract Parent {
 			uint256 public m_aMember;

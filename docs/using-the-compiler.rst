@@ -23,10 +23,10 @@ it is also possible to provide path redirects using ``prefix=path`` in the follo
 
 ::
 
-    solc github.com/ethereum/dapp-bin/=/usr/local/lib/dapp-bin/ =/usr/local/lib/fallback file.sol
+    solc github.com/wuyazero/dapp-bin/=/usr/local/lib/dapp-bin/ =/usr/local/lib/fallback file.sol
 
 This essentially instructs the compiler to search for anything starting with
-``github.com/ethereum/dapp-bin/`` under ``/usr/local/lib/dapp-bin`` and if it does not
+``github.com/wuyazero/dapp-bin/`` under ``/usr/local/lib/dapp-bin`` and if it does not
 find the file there, it will look at ``/usr/local/lib/fallback`` (the empty prefix
 always matches). ``solc`` will not read files from the filesystem that lie outside of
 the remapping targets and outside of the directories where explicitly specified source
@@ -216,7 +216,7 @@ Output Description
           // If the language used has no contract names, this field should equal to an empty string.
           "ContractName": {
             // The Ethereum Contract ABI. If empty, it is represented as an empty array.
-            // See https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI
+            // See https://github.com/wuyazero/wiki/wiki/Ethereum-Contract-ABI
             abi: [],
             // See the Metadata Output documentation (serialised JSON string)
             metadata: "{...}",

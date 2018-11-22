@@ -3,7 +3,7 @@
 #------------------------------------------------------------------------------
 # Bash script for publishing Solidity Emscripten binaries to Github.
 #
-# The results are committed to https://github.com/ethereum/solc-bin.
+# The results are committed to https://github.com/wuyazero/solc-bin.
 #
 # The documentation for solidity is hosted at:
 #
@@ -48,7 +48,7 @@ chmod 600 deploy_key
 eval `ssh-agent -s`
 ssh-add deploy_key
 
-git clone --depth 2 git@github.com:ethereum/solc-bin.git
+git clone --depth 2 git@github.com:wuyazero/solc-bin.git
 cd solc-bin
 git config user.name "travis"
 git config user.email "chris@ethereum.org"

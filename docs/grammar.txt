@@ -81,7 +81,7 @@ EmitStatement = 'emit' FunctionCall
 VariableDefinition = ('var' IdentifierList | VariableDeclaration | '(' VariableDeclaration? (',' VariableDeclaration? )* ')' ) ( '=' Expression )?
 IdentifierList = '(' ( Identifier? ',' )* Identifier? ')'
 
-// Precedence by order (see github.com/ethereum/solidity/pull/732)
+// Precedence by order (see github.com/wuyazero/solidity/pull/732)
 Expression
   = Expression ('++' | '--')
   | NewExpression

@@ -13,17 +13,17 @@ In particular, we need help in the following areas:
 * Improving the documentation
 * Responding to questions from other users on `StackExchange
   <https://ethereum.stackexchange.com>`_ and the `Solidity Gitter
-  <https://gitter.im/ethereum/solidity>`_
+  <https://gitter.im/wuyazero/solidity>`_
 * Fixing and responding to `Solidity's GitHub issues
-  <https://github.com/ethereum/solidity/issues>`_, especially those tagged as
-  `up-for-grabs <https://github.com/ethereum/solidity/issues?q=is%3Aopen+is%3Aissue+label%3Aup-for-grabs>`_ which are
+  <https://github.com/wuyazero/solidity/issues>`_, especially those tagged as
+  `up-for-grabs <https://github.com/wuyazero/solidity/issues?q=is%3Aopen+is%3Aissue+label%3Aup-for-grabs>`_ which are
   meant as introductory issues for external contributors.
 
 How to Report Issues
 ====================
 
 To report an issue, please use the
-`GitHub issues tracker <https://github.com/ethereum/solidity/issues>`_. When
+`GitHub issues tracker <https://github.com/wuyazero/solidity/issues>`_. When
 reporting issues, please mention the following details:
 
 * Which version of Solidity you are using
@@ -51,12 +51,12 @@ Additionally, if you are writing a new feature, please ensure you write appropri
 Boost test cases and place them under ``test/``.
 
 However, if you are making a larger change, please consult with the `Solidity Development Gitter channel
-<https://gitter.im/ethereum/solidity-dev>`_ (different from the one mentioned above, this on is
+<https://gitter.im/wuyazero/solidity-dev>`_ (different from the one mentioned above, this on is
 focused on compiler and language development instead of language use) first.
 
 
 Finally, please make sure you respect the `coding style
-<https://raw.githubusercontent.com/ethereum/solidity/develop/CODING_STYLE.md>`_
+<https://raw.githubusercontent.com/wuyazero/solidity/develop/CODING_STYLE.md>`_
 for this project. Also, even though we do CI testing, please test your code and
 ensure that it builds locally before submitting a pull request.
 
@@ -78,7 +78,7 @@ To disable the z3 tests, use ``./build/test/soltest -- --no-smt --testpath ./tes
 to run a subset of the tests that do not require ``cpp-ethereum``, use
 ``./build/test/soltest -- --no-ipc --testpath ./test``.
 
-For all other tests, you need to install `cpp-ethereum <https://github.com/ethereum/cpp-ethereum/releases/download/solidityTester/eth>`_ and run it in testing mode: ``eth --test -d /tmp/testeth``.
+For all other tests, you need to install `cpp-ethereum <https://github.com/wuyazero/cpp-wuyazero/releases/download/solidityTester/eth>`_ and run it in testing mode: ``eth --test -d /tmp/testeth``.
 
 Then you run the actual tests: ``./build/test/soltest -- --ipcpath /tmp/testeth/geth.ipc --testpath ./test``.
 

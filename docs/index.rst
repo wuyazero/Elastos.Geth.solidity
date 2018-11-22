@@ -38,7 +38,7 @@ This documentation is translated into several languages by community volunteers,
 
 * `Simplified Chinese <http://solidity-cn.readthedocs.io>`_ (in progress)
 * `Spanish <https://solidity-es.readthedocs.io>`_
-* `Russian <https://github.com/ethereum/wiki/wiki/%5BRussian%5D-%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-%D0%BF%D0%BE-Solidity>`_ (rather outdated)
+* `Russian <https://github.com/wuyazero/wiki/wiki/%5BRussian%5D-%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-%D0%BF%D0%BE-Solidity>`_ (rather outdated)
 * `Korean <http://solidity-kr.readthedocs.io>`_ (in progress)
 
 
@@ -47,15 +47,15 @@ Useful links
 
 * `Ethereum <https://ethereum.org>`_
 
-* `Changelog <https://github.com/ethereum/solidity/blob/develop/Changelog.md>`_
+* `Changelog <https://github.com/wuyazero/solidity/blob/develop/Changelog.md>`_
 
 * `Story Backlog <https://www.pivotaltracker.com/n/projects/1189488>`_
 
-* `Source Code <https://github.com/ethereum/solidity/>`_
+* `Source Code <https://github.com/wuyazero/solidity/>`_
 
 * `Ethereum Stackexchange <https://ethereum.stackexchange.com/>`_
 
-* `Gitter Chat <https://gitter.im/ethereum/solidity/>`_
+* `Gitter Chat <https://gitter.im/wuyazero/solidity/>`_
 
 Available Solidity Integrations
 -------------------------------
@@ -90,7 +90,7 @@ Available Solidity Integrations
 * `Visual Studio Code extension <http://juan.blanco.ws/solidity-contracts-in-visual-studio-code/>`_
     Solidity plugin for Microsoft Visual Studio Code that includes syntax highlighting and the Solidity compiler.
 
-* `Emacs Solidity <https://github.com/ethereum/emacs-solidity/>`_
+* `Emacs Solidity <https://github.com/wuyazero/emacs-solidity/>`_
     Plugin for the Emacs editor providing syntax highlighting and compilation error reporting.
 
 * `Vim Solidity <https://github.com/tomlion/vim-solidity/>`_
@@ -101,7 +101,7 @@ Available Solidity Integrations
 
 Discontinued:
 
-* `Mix IDE <https://github.com/ethereum/mix/>`_
+* `Mix IDE <https://github.com/wuyazero/mix/>`_
     Qt based IDE for designing, debugging and testing solidity smart contracts.
 
 * `Ethereum Studio <https://live.ether.camp/>`_		
@@ -150,7 +150,7 @@ The last and most extensive section will cover all aspects of Solidity in depth.
 
 If you still have questions, you can try searching or asking on the
 `Ethereum Stackexchange <https://ethereum.stackexchange.com/>`_
-site, or come to our `gitter channel <https://gitter.im/ethereum/solidity/>`_.
+site, or come to our `gitter channel <https://gitter.im/wuyazero/solidity/>`_.
 Ideas for improving Solidity or this documentation are always welcome!
 
 Contents

@@ -150,7 +150,7 @@ See `struct_and_for_loop_tester.sol <https://github.com/fivedogit/solidity-baby-
 What are some examples of basic string manipulation (``substring``, ``indexOf``, ``charAt``, etc)?
 ==================================================================================================
 
-There are some string utility functions at `stringUtils.sol <https://github.com/ethereum/dapp-bin/blob/master/library/stringUtils.sol>`_
+There are some string utility functions at `stringUtils.sol <https://github.com/wuyazero/dapp-bin/blob/master/library/stringUtils.sol>`_
 which will be extended in the future. In addition, Arachnid has written `solidity-stringutils <https://github.com/Arachnid/solidity-stringutils>`_.
 
 For now, if you want to modify a string (even when you only want to know its length),
@@ -566,7 +566,7 @@ that the supplied gas is not enough. This situation is the only one
 where an "out of gas" exception does not revert changes to the state,
 i.e. in this case the initialisation of the state variables.
 
-https://github.com/ethereum/wiki/wiki/Subtleties
+https://github.com/wuyazero/wiki/wiki/Subtleties
 
 After a successful CREATE operation's sub-execution, if the operation returns x, 5 * len(x) gas is subtracted from the remaining gas before the contract is created. If the remaining gas is less than 5 * len(x), then no gas is subtracted, the code of the created contract becomes the empty string, but this is not treated as an exceptional condition - no reverts happen.
 
@@ -589,4 +589,4 @@ More Questions?
 ===============
 
 If you have more questions or your question is not answered here, please talk to us on
-`gitter <https://gitter.im/ethereum/solidity>`_ or file an `issue <https://github.com/ethereum/solidity/issues>`_.
+`gitter <https://gitter.im/wuyazero/solidity>`_ or file an `issue <https://github.com/wuyazero/solidity/issues>`_.

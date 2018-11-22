@@ -244,7 +244,7 @@ long and do not pass the checksum test produce
 a warning and are treated as regular rational number literals.
 
 .. note::
-    The mixed-case address checksum format is defined in `EIP-55 <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-55.md>`_.
+    The mixed-case address checksum format is defined in `EIP-55 <https://github.com/wuyazero/EIPs/blob/master/EIPS/eip-55.md>`_.
 
 .. index:: literal, literal;rational
 
@@ -893,7 +893,7 @@ for each ``_KeyType``, recursively.
 
 .. note::
   Mappings are not iterable, but it is possible to implement a data structure on top of them.
-  For an example, see `iterable mapping <https://github.com/ethereum/dapp-bin/blob/master/library/iterable_mapping.sol>`_.
+  For an example, see `iterable mapping <https://github.com/wuyazero/dapp-bin/blob/master/library/iterable_mapping.sol>`_.
 
 .. index:: assignment, ! delete, lvalue
 

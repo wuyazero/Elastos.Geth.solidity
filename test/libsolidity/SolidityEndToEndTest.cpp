@@ -5601,7 +5601,7 @@ BOOST_AUTO_TEST_CASE(assignment_to_const_var_involving_keccak)
 	ABI_CHECK(callContractFunction("f()"), encodeArgs(dev::keccak256("abc")));
 }
 
-// Disabled until https://github.com/ethereum/solidity/issues/715 is implemented
+// Disabled until https://github.com/wuyazero/solidity/issues/715 is implemented
 //BOOST_AUTO_TEST_CASE(assignment_to_const_array_vars)
 //{
 //	char const* sourceCode = R"(
@@ -5615,7 +5615,7 @@ BOOST_AUTO_TEST_CASE(assignment_to_const_var_involving_keccak)
 //	ABI_CHECK(callContractFunction("f()"), encodeArgs(1 + 2 + 3));
 //}
 
-// Disabled until https://github.com/ethereum/solidity/issues/715 is implemented
+// Disabled until https://github.com/wuyazero/solidity/issues/715 is implemented
 //BOOST_AUTO_TEST_CASE(constant_struct)
 //{
 //	char const* sourceCode = R"(

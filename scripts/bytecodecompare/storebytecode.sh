@@ -3,7 +3,7 @@
 #------------------------------------------------------------------------------
 # Script used for cross-platform comparison as part of the travis automation.
 # Splits all test source code into multiple files, generates bytecode and
-# uploads the bytecode into github.com/ethereum/solidity-test-bytecode where
+# uploads the bytecode into github.com/wuyazero/solidity-test-bytecode where
 # another travis job is triggered to do the actual comparison.
 #
 # ------------------------------------------------------------------------------
@@ -87,7 +87,7 @@ EOF
         eval `ssh-agent -s`
         ssh-add deploy_key
 
-        git clone --depth 2 git@github.com:ethereum/solidity-test-bytecode.git
+        git clone --depth 2 git@github.com:wuyazero/solidity-test-bytecode.git
         cd solidity-test-bytecode
         git config user.name "travis"
         git config user.email "chris@ethereum.org"

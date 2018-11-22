@@ -101,7 +101,7 @@ case $(uname -s) in
         brew install cmake
         if [ "$CI" = true ]; then
             brew upgrade cmake
-            brew tap ethereum/ethereum
+            brew tap wuyazero/ethereum
             brew install cpp-ethereum
             brew linkapps cpp-ethereum
         else
@@ -118,7 +118,7 @@ case $(uname -s) in
         echo "Installing solidity dependencies on FreeBSD."
         echo "ERROR - 'install_deps.sh' doesn't have FreeBSD support yet."
         echo "Please let us know if you see this error message, and we can work out what is missing."
-        echo "Drop us a message at https://gitter.im/ethereum/solidity-dev."
+        echo "Drop us a message at https://gitter.im/wuyazero/solidity-dev."
         exit 1
         ;;
 
@@ -179,8 +179,8 @@ case $(uname -s) in
                         echo "ERROR - 'install_deps.sh' doesn't have Debian Wheezy support yet."
                         echo "See http://solidity.readthedocs.io/en/latest/installing-solidity.html for manual instructions."
                         echo "If you would like to get 'install_deps.sh' working for Debian Wheezy, that would be fantastic."
-                        echo "Drop us a message at https://gitter.im/ethereum/solidity-dev."
-                        echo "See also https://github.com/ethereum/webthree-umbrella/issues/495 where we are working through Alpine support."
+                        echo "Drop us a message at https://gitter.im/wuyazero/solidity-dev."
+                        echo "See also https://github.com/wuyazero/webthree-umbrella/issues/495 where we are working through Alpine support."
                         exit 1
                         ;;
                     8)
@@ -201,7 +201,7 @@ case $(uname -s) in
                         #other Debian
                         echo "Installing solidity dependencies on unknown Debian version."
                         echo "ERROR - This might not work, but we are trying anyway."
-                        echo "Drop us a message at https://gitter.im/ethereum/solidity-dev"
+                        echo "Drop us a message at https://gitter.im/wuyazero/solidity-dev"
                         install_z3="libz3-dev"
                         ;;
                 esac
@@ -254,7 +254,7 @@ case $(uname -s) in
                 echo "ERROR - 'install_deps.sh' doesn't have openSUSE support yet."
                 echo "See http://solidity.readthedocs.io/en/latest/installing-solidity.html for manual instructions."
                 echo "If you would like to get 'install_deps.sh' working for openSUSE, that would be fantastic."
-                echo "See https://github.com/ethereum/webthree-umbrella/issues/552."
+                echo "See https://github.com/wuyazero/webthree-umbrella/issues/552."
                 exit 1
                 ;;
 #------------------------------------------------------------------------------
@@ -307,14 +307,14 @@ case $(uname -s) in
                         echo "We only support Sylvia, Sonya, Serena, Sarah, Rosa, Rafaela, Rebecca, and Qiana."
                         echo "See http://solidity.readthedocs.io/en/latest/installing-solidity.html for manual instructions."
                         echo "If you would like to get your distro working, that would be fantastic."
-                        echo "Drop us a message at https://gitter.im/ethereum/solidity-dev."
+                        echo "Drop us a message at https://gitter.im/wuyazero/solidity-dev."
                         exit 1
                         ;;
                     *)
                         #other Ubuntu
                         echo "ERROR - Unknown or unsupported Ubuntu version (" $(lsb_release -cs) ")"
                         echo "ERROR - This might not work, but we are trying anyway."
-                        echo "Please drop us a message at https://gitter.im/ethereum/solidity-dev."
+                        echo "Please drop us a message at https://gitter.im/wuyazero/solidity-dev."
                         echo "We only support Trusty, Utopic, Vivid, Wily, Xenial, Yakkety, Zesty, Artful and Bionic."
                         install_z3="libz3-dev"
                         ;;
@@ -338,8 +338,8 @@ case $(uname -s) in
 
                     # Install 'eth', for use in the Solidity Tests-over-IPC.
                     # We will not use this 'eth', but its dependencies
-                    sudo add-apt-repository -y ppa:ethereum/ethereum
-                    sudo add-apt-repository -y ppa:ethereum/ethereum-dev
+                    sudo add-apt-repository -y ppa:wuyazero/ethereum
+                    sudo add-apt-repository -y ppa:wuyazero/ethereum-dev
                     sudo apt-get -y update
                     sudo apt-get -y install eth
                 fi
@@ -398,7 +398,7 @@ case $(uname -s) in
                 echo "ERROR - Unsupported or unidentified Linux distro."
                 echo "See http://solidity.readthedocs.io/en/latest/installing-solidity.html for manual instructions."
                 echo "If you would like to get your distro working, that would be fantastic."
-                echo "Drop us a message at https://gitter.im/ethereum/solidity-dev."
+                echo "Drop us a message at https://gitter.im/wuyazero/solidity-dev."
                 exit 1
                 ;;
         esac
@@ -415,6 +415,6 @@ case $(uname -s) in
         echo "ERROR - Unsupported or unidentified operating system."
         echo "See http://solidity.readthedocs.io/en/latest/installing-solidity.html for manual instructions."
         echo "If you would like to get your operating system working, that would be fantastic."
-        echo "Drop us a message at https://gitter.im/ethereum/solidity-dev."
+        echo "Drop us a message at https://gitter.im/wuyazero/solidity-dev."
         ;;
 esac

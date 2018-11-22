@@ -550,7 +550,7 @@ Breaking Changes:
  * Removed ``--interface`` (Solidity interface) output option
  * JSON AST: General cleanup, renamed many nodes to match their C++ names.
  * JSON output: ``srcmap-runtime`` renamed to ``srcmapRuntime``.
- * Moved (and reworked) standard library contracts from inside the compiler to github.com/ethereum/solidity/std
+ * Moved (and reworked) standard library contracts from inside the compiler to github.com/wuyazero/solidity/std
    (``import "std";`` or ``import owned;`` do not work anymore).
  * Confusing and undocumented keyword ``after`` was removed.
  * New reserved words: ``abstract``, ``hex``, ``interface``, ``payable``, ``pure``, ``static``, ``view``.

@@ -114,7 +114,15 @@ GasMeter::GasConsumption GasMeter::estimateMax(AssemblyItem const& _item, bool _
 		case Instruction::EXTCODESIZE:
 			gas = GasCosts::extCodeGas(m_evmVersion);
 			break;
+		case Instruction::EXTPAYLOADSIZE:
+			gas = GasCosts::extCodeGas(m_evmVersion);
+			break;
 		case Instruction::EXTCODECOPY:
+			gas = GasCosts::extCodeGas(m_evmVersion);
+			gas += memoryGas(-1, -3);
+			gas += wordGas(GasCosts::copyGas, m_state->relativeStackElement(-3));
+			break;
+		case Instruction::EXTPAYLOADCOPY:
 			gas = GasCosts::extCodeGas(m_evmVersion);
 			gas += memoryGas(-1, -3);
 			gas += wordGas(GasCosts::copyGas, m_state->relativeStackElement(-3));

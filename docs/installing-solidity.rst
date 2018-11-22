@@ -22,7 +22,7 @@ Remix
 
 `Access Remix online <https://remix.ethereum.org/>`_, you don't need to install anything.
 If you want to use it without connection to the Internet, go to
-https://github.com/ethereum/browser-solidity/tree/gh-pages and download the .ZIP file as
+https://github.com/wuyazero/browser-solidity/tree/gh-pages and download the .ZIP file as
 explained on that page.
 
 Further options on this page detail installing commandline Solidity compiler software
@@ -38,7 +38,7 @@ Use `npm` for a convenient and portable way to install `solcjs`, a Solidity comp
 `solcjs` program has fewer features than all options further down this page. Our 
 :ref:`commandline-compiler` documentation assumes you are using
 the full-featured compiler, `solc`. So if you install `solcjs` from `npm` then you will
-stop reading the documentation here and then continue to `solc-js <https://github.com/ethereum/solc-js>`_.
+stop reading the documentation here and then continue to `solc-js <https://github.com/wuyazero/solc-js>`_.
 
 Note: The solc-js project is derived from the C++
 `solc` by using Emscripten. `solc-js` can be used in JavaScript projects directly (such as Remix).
@@ -64,7 +64,7 @@ repository contains potentially unstable changes in the develop branch.
 
 .. code:: bash
 
-    docker run ethereum/solc:stable solc --version
+    docker run wuyazero/solc:stable solc --version
 
 Currently, the docker image only contains the compiler executable,
 so you have to do some additional work to link in the source and
@@ -74,13 +74,13 @@ Binary Packages
 ===============
 
 Binary packages of Solidity are available at
-`solidity/releases <https://github.com/ethereum/solidity/releases>`_.
+`solidity/releases <https://github.com/wuyazero/solidity/releases>`_.
 
 We also have PPAs for Ubuntu.  For the latest stable version.
 
 .. code:: bash
 
-    sudo add-apt-repository ppa:ethereum/ethereum
+    sudo add-apt-repository ppa:wuyazero/ethereum
     sudo apt-get update
     sudo apt-get install solc
 
@@ -88,8 +88,8 @@ If you want to use the cutting edge developer version:
 
 .. code:: bash
 
-    sudo add-apt-repository ppa:ethereum/ethereum
-    sudo add-apt-repository ppa:ethereum/ethereum-dev
+    sudo add-apt-repository ppa:wuyazero/ethereum
+    sudo add-apt-repository ppa:wuyazero/ethereum-dev
     sudo apt-get update
     sudo apt-get install solc
     
@@ -120,14 +120,14 @@ We will re-add the pre-built bottles soon.
 
     brew update
     brew upgrade
-    brew tap ethereum/ethereum
+    brew tap wuyazero/ethereum
     brew install solidity
 
 If you need a specific version of Solidity you can install a 
 Homebrew formula directly from Github.
 
 View 
-`solidity.rb commits on Github <https://github.com/ethereum/homebrew-ethereum/commits/master/solidity.rb>`_.
+`solidity.rb commits on Github <https://github.com/wuyazero/homebrew-wuyazero/commits/master/solidity.rb>`_.
 
 Follow the history links until you have a raw file link of a 
 specific commit of ``solidity.rb``.
@@ -138,7 +138,7 @@ Install it using ``brew``:
 
     brew unlink solidity
     # Install 0.4.8
-    brew install https://raw.githubusercontent.com/ethereum/homebrew-ethereum/77cce03da9f289e5a3ffe579840d3c5dc0a62717/solidity.rb
+    brew install https://raw.githubusercontent.com/wuyazero/homebrew-wuyazero/77cce03da9f289e5a3ffe579840d3c5dc0a62717/solidity.rb
 
 Gentoo Linux also provides a solidity package that can be installed using ``emerge``:
 
@@ -158,7 +158,7 @@ To clone the source code, execute the following command:
 
 .. code:: bash
 
-    git clone --recursive https://github.com/ethereum/solidity.git
+    git clone --recursive https://github.com/wuyazero/solidity.git
     cd solidity
 
 If you want to help developing Solidity,

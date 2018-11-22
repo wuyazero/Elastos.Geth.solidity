@@ -4,10 +4,10 @@
 ## ppa servers for building.
 ##
 ## If no argument is given, creates a package for the develop branch
-## and uploads it to the ethereum/ethereum-dev ppa.
+## and uploads it to the wuyazero/ethereum-dev ppa.
 ##
 ## If an argument is given, it is used as a tag and the resulting package
-## is uploaded to the ethereum/ethereum ppa.
+## is uploaded to the wuyazero/ethereum ppa.
 ##
 ## The gnupg key for "builds@ethereum.org" has to be present in order to sign
 ## the package.
@@ -20,13 +20,13 @@
 ##  [ethereum-dev]
 ##  fqdn			= ppa.launchpad.net
 ##  method			= ftp
-##  incoming		= ~ethereum/ethereum-dev
+##  incoming		= ~wuyazero/ethereum-dev
 ##  login			= anonymous
 ## 
 ##  [ethereum]
 ##  fqdn			= ppa.launchpad.net
 ##  method			= ftp
-##  incoming		= ~ethereum/ethereum
+##  incoming		= ~wuyazero/ethereum
 ##  login			= anonymous
 
 ##
@@ -44,10 +44,10 @@ fi
 if [ "$branch" = develop ]
 then
     pparepo=ethereum-dev
-    ppafilesurl=https://launchpad.net/~ethereum/+archive/ubuntu/ethereum-dev/+files
+    ppafilesurl=https://launchpad.net/~wuyazero/+archive/ubuntu/ethereum-dev/+files
 else
     pparepo=ethereum
-    ppafilesurl=https://launchpad.net/~ethereum/+archive/ubuntu/ethereum/+files
+    ppafilesurl=https://launchpad.net/~wuyazero/+archive/ubuntu/wuyazero/+files
 fi
 
 keyid=703F83D0
@@ -71,7 +71,7 @@ else
 fi
 
 # Fetch source
-git clone --depth 2 --recursive https://github.com/ethereum/solidity.git -b "$branch"
+git clone --depth 2 --recursive https://github.com/wuyazero/solidity.git -b "$branch"
 mv solidity solc
 
 # Fetch jsoncpp dependency
@@ -123,8 +123,8 @@ Build-Depends: ${Z3DEPENDENCY}debhelper (>= 9.0.0),
                scons
 Standards-Version: 3.9.5
 Homepage: https://ethereum.org
-Vcs-Git: git://github.com/ethereum/solidity.git
-Vcs-Browser: https://github.com/ethereum/solidity
+Vcs-Git: git://github.com/wuyazero/solidity.git
+Vcs-Browser: https://github.com/wuyazero/solidity
 
 Package: solc
 Architecture: any-i386 any-amd64
@@ -173,7 +173,7 @@ EOF
 cat <<EOF > debian/copyright
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: solc
-Source: https://github.com/ethereum/solidity
+Source: https://github.com/wuyazero/solidity
 
 Files: *
 Copyright: 2014-2016 Ethereum
